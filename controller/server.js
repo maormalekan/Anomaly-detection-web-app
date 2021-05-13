@@ -1,7 +1,6 @@
 const express = require('express');
 const fileUpload = require('express-fileupload');
 const app = express();
-const fs = require("fs");
 const bp = require('body-parser');
 const model = require('../model/model')
 
