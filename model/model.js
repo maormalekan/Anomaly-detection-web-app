@@ -25,6 +25,7 @@ function createDict(text) {
 }
 
 function learn(dict, model_type) {
+    correlatedFeatures = [];
     let arr = Array.from(dict.keys());
     let vals = [];
     let len = dict.get(arr[1]).length;
@@ -113,11 +114,14 @@ function detect(dict, model_type) {
             } else
                 j++;
         }
-        let col = correlatedFeatures[i].feature1;
+        let pair_of_features ={
+            feature1: correlatedFeatures[i].feature1,
+            feature2: correlatedFeatures[i].feature2
+        } ;
         let toPush = {
-            [col]: spanColumn,
-            reason: spanColumn.length > 0 ? "anomaly with: " + correlatedFeatures[i].feature2 + " using " +
-                model_type.detection_algorithms + " algorithm" : {}
+            pair_of_features: pair_of_features,
+            anoamly_at: spanColumn.length > 0 ? spanColumn : {},
+            algorithm_type: model_type.detection_algorithms
         };
         anomalies.push(toPush);
 
