@@ -27,7 +27,7 @@ app.post('/detect', function (req, res) {
         let detect_dict = model.createDict(detect_file.data.toString());
         model.learn(proper_dict, model_type);
         let result = model.detect(detect_dict, model_type);
-        res.write(JSON.stringify(result, null, 1));
+        res.write(JSON.stringify(result, null, 4));
         res.status(200).end();
     } else
         res.status(404).end();
