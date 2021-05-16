@@ -7,7 +7,7 @@ const model = require('../model/model')
 app.use(bp.json());
 app.use(bp.urlencoded({extended: true}));
 app.use(fileUpload({}));
-app.use(express.static('../view'));
+app.use(express.static('view'));
 
 
 //starting server on port 8080
