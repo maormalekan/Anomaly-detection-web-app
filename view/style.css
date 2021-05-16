@@ -16,7 +16,7 @@ select {
     padding: 15px 40px 15px 30px;
     /*font-size: 20px;*/
     font-size: 100%;
-    width: 25%;
+    width: 40%;
     letter-spacing: 1px;
     text-align-last:center;
     font-family: "Arial";
@@ -37,7 +37,7 @@ table {
     border: 2px solid black;
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
-    width: 12%;
+    width: 16%;
     display: inline-block;
     text-align:center;
     background: white;
@@ -50,7 +50,7 @@ table {
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
     display: inline-block;
-    width: 5%;
+    width: 10%;
     font-size: 100%;
     text-align:center;
     background: white;
