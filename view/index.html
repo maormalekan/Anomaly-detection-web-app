@@ -18,32 +18,23 @@
     </div>
     <br>
     <div align="center">
-        <input type="file" name="proper_file" id="proper_file" class="inputfile" />
-        <label for="proper_file">Upload a proper file</label>
-        <input type="file" name="detect_file" id="detect_file" class="inputfile" />
-        <label for="detect_file">Upload a detect file</label>
+        <input type="file" name="proper_file" id="proper_file" class="inputfile" onchange="displayFileName('proper_file')"/>
+        <label id="label_proper_file" for="proper_file">Upload a proper file</label>
+        <input type="file" name="detect_file" id="detect_file" class="inputfile" onchange="displayFileName('detect_file')"/>
+        <label id="label_detect_file" for="detect_file">Upload a detect file</label>
     </div>
     <br>
     <div align="center">
         <input type="submit" value="detect!" class="submitfile">
     </div>
-
-<!--
-    <table>
-        <tr>
-            <td><input type="file" name="proper_file"></td>
-            <td>proper file</td>
-        </tr>
-        <tr>
-            <td><input type="file" name="detect_file"></td>
-            <td>detect file</td>
-        </tr>
-        <br>
-    </table>
--->
-<!--    <input type="submit" value="upload!">-->
 </form>
 <br>
-<iframe name="result" width="80%" height="500"></iframe>
+<iframe name="result" width="100%" height="500"></iframe>
+<script>
+    function displayFileName(id) {
+        var fileName = document.getElementById(id).files[0].name;
+        document.getElementById('label_'+id).innerText = fileName;
+    }
+</script>
 </body>
 </html>
