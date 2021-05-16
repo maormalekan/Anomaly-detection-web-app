@@ -13,7 +13,7 @@ h1 {
 select {
     border: 2px solid #333333;
     opacity: 60%;
-    padding: 15px 40px 15px 15px;
+    padding: 15px 40px 15px 30px;
     /*font-size: 20px;*/
     font-size: 100%;
     width: 25%;
@@ -36,7 +36,7 @@ table {
 .inputfile + label {
     border: 2px solid black;
     border-radius: 10px;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 20px 10px 20px;
     width: 12%;
     display: inline-block;
     text-align:center;
@@ -48,7 +48,7 @@ table {
 .submitfile {
     border: 2px solid black;
     border-radius: 10px;
-    padding: 10px 20px 10px 18px;
+    padding: 10px 20px 10px 20px;
     display: inline-block;
     width: 5%;
     font-size: 100%;
@@ -58,6 +58,7 @@ table {
     font-family: "Arial";
 }
 
+.submitfile:hover,
 .inputfile + label:hover {
     font-weight: bold;
     cursor: pointer; /* "hand" cursor */
