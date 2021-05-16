@@ -25,6 +25,7 @@ function createDict(text) {
 }
 
 function learn(dict, model_type) {
+    correlatedFeatures = [];
     let arr = Array.from(dict.keys());
     let vals = [];
     let len = dict.get(arr[1]).length;
