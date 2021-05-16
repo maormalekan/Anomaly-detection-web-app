@@ -19,19 +19,32 @@ app.get('/', function (req, res) {
 })
 
 app.post('/detect', function (req, res) {
-    if (req.files) {
-        let proper_file = req.files.proper_file;
-        let detect_file = req.files.detect_file;
-        let model_type = req.body;
-        let proper_dict = model.createDict(proper_file.data.toString());
-        let detect_dict = model.createDict(detect_file.data.toString());
-        model.learn(proper_dict, model_type);
-        let result = model.detect(detect_dict, model_type);
-        res.write(JSON.stringify(result, null, 4));
-        res.status(200).end();
-    } else
-        res.status(404).end();
+    if (req.files && req.body.detection_algorithms != null) {
+        if (!req.files.proper_file)
+            res.send('<h1>Upload a proper file!</h1>').status(404).end();
+        else if (!req.files.detect_file)
+            res.send('<h1>Upload a detect file!</h1>').status(404).end();
+        else {
+            let proper_file = req.files.proper_file;
+            let detect_file = req.files.detect_file;
+            let model_type = req.body;
+            let proper_dict = model.createDict(proper_file.data.toString());
+            let detect_dict = model.createDict(detect_file.data.toString());
+            model.learn(proper_dict, model_type);
+            let result = model.detect(detect_dict, model_type);
+            res.write(JSON.stringify(result, null, 4));
+            res.status(200).end();
+        }
+    } else if (req.body.detection_algorithms != null)
+        res.send('<h1> Upload proper and detect files!</h1>').status(404).end();
+    else if (req.files)
+        res.send('<h1> Choose an algorithm!</h1>').status(404).end();
+    else
+        res.send('<h1> Choose an algorithm and upload files!</h1>').status(404).end();
+
+
 })
+
 
 
 
