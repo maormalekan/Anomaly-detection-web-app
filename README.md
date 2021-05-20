@@ -16,7 +16,7 @@ Example:
 
 ## Implementation
 This App based on MVC software architectural pattern that has three main parts that run it, each part with its own designated responsibilities.</br>
-The model is responsble to calculate the anomalies , the controller is the server that responsible to connect the http requests from the client to the calculation of the model behind the scenes and the view is responsible to display the web pages to the client (with html pages). </br>
+The model is responsble to calculate the anomalies , the controller is responsible to connect the http requests from the client to the calculation of the model behind the scenes and the view is responsible to display the web pages to the client (with html pages). </br>
 
 ## Collaborators
 Developed by Nimrod Gabbay and Maor Malekan.</br>
