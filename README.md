@@ -1,5 +1,5 @@
 # Anomaly-detection-web-app
-web application that allows many users to upload csv files that contain data about flights such as speed, altitude, direction, etc and detect anomalies between them.</br>
+A web application that allows many users to upload csv files that contain data about flights such as speed, altitude, direction, etc and detect anomalies between them.</br>
 The user needs to upload 2 csv files - one represents proper data of each feature of the flight and the other is the file that the user wants
 to detect anomalies with. The user also needs to choose the detection algorithm that the app will use to find anoamalies.</br>
 First, The app will train the anomaly detection model according to the data of the proper file and after that will calculate anomalies between features from the detect file by the trained model.</br>
