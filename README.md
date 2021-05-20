@@ -9,7 +9,7 @@ The app listens at port 8080 so type : "http://localhost:8080/" (http GET comman
 <img width="957" alt="‏‏לכידה" src="https://user-images.githubusercontent.com/54501031/118989022-5d7c8880-b98a-11eb-963e-07f9b6f30f4a.PNG"></br>
 
 Then, choose a detection algorithm that you want to detect with, and upload 2 csv files as explained above.</br>
-When you click "detect!" (http POST command) the app will calculate the correlated features and in cases of anomaly detection between them, the time range of the anomalies will be saved also.</br>
+When you click "detect!" (http POST command) the app will calculate the correlated features and in cases of anomaly detection between them, the time ranges of the anomalies will be saved also.</br>
 All the details of correlated features and anomalies between them will be sent back to the user as JSON.</br>
 Example:
 ![Inked‏‏לכידה PNG1_LI](https://user-images.githubusercontent.com/54501031/118995474-d9c59a80-b98f-11eb-95fb-9359096043ef.jpg)</br>
