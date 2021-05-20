@@ -5,7 +5,7 @@ to detect anomalies with. The user also needs to choose the detection algorithm 
 First, The app will train the anomaly detection model according to the data of the proper file and after that will calculate anomalies between features from the detect file by the trained model.</br>
 
 ## How it works?
-The app listens at port 8080 so type : "http://localhost:8080/" (http GET command) in your browser and you will get the home page of the app:
+The app listens on local host, port 8080 so type : "http://localhost:8080/" (http GET command) in your browser and you will get the home page of the app:
 <img width="957" alt="‏‏לכידה" src="https://user-images.githubusercontent.com/54501031/118989022-5d7c8880-b98a-11eb-963e-07f9b6f30f4a.PNG"></br>
 
 Then, choose a detection algorithm that you want to detect with, and upload 2 csv files as explained above.</br>
