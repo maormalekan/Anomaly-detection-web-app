@@ -8,9 +8,8 @@ First, The app will train the anomaly detection model according the data of the 
 The app listens at port 8080 so type : "http://localhost:8080/" (http GET command) and you will get the home page of the app:
 <img width="957" alt="‏‏לכידה" src="https://user-images.githubusercontent.com/54501031/118989022-5d7c8880-b98a-11eb-963e-07f9b6f30f4a.PNG">
 
-Then, choose a detection algorithm that you want that to detect with, and upload 2 csv files as explained above.
-When you click "detect!" (http POST command) the app will calculate the correlated features and in cases of anomaly detection between them, the time of the anomalies will be 
-saved also.
+Then, choose a detection algorithm that you want to detect with, and upload 2 csv files as explained above.
+When you click "detect!" (http POST command) the app will calculate the correlated features and in cases of anomaly detection between them, the range of time of the anomalies will be saved also.
 All the details of correlated features and anomalies between them will be sent back to the user as JSON.
 Example:
 ![Inked‏‏לכידה PNG1_LI](https://user-images.githubusercontent.com/54501031/118995474-d9c59a80-b98f-11eb-95fb-9359096043ef.jpg)
