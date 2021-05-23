@@ -15,7 +15,7 @@ Example:
 ![Inked‏‏לכידה PNG1_LI](https://user-images.githubusercontent.com/54501031/118995474-d9c59a80-b98f-11eb-95fb-9359096043ef.jpg)</br>
 
 ## Implementation
-This App was built with node.js and based on MVC software architectural pattern that has three main parts that run it, each part with its own designated responsibilities.</br>
+This app was built with node.js and based on MVC software architectural pattern that has three main parts that run it, each part with its own designated responsibilities.</br>
 The model is responsble to calculate the anomalies , the controller is responsible to connect the http requests from the client to the calculation of the model behind the scenes and the view is responsible to display the web pages to the client (with html pages). </br>
 
 ## Collaborators
