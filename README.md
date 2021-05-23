@@ -18,7 +18,7 @@ Example:
 This app was built with node.js and based on MVC software architectural pattern that has three main parts that run it, each part with its own designated responsibilities.</br>
 The model is responsble to calculate the anomalies , the controller is responsible to connect the http requests from the client to the calculation of the model behind the scenes and the view is responsible to display the web pages to the client (with html pages). </br>
 ### UML
-<img src="https://github.com/nimrod97/Anomaly-detection-web-app/blob/main/Untitled%20Diagram.jpg" width="400" height="600">
+<img src="https://github.com/nimrod97/Anomaly-detection-web-app/blob/main/Untitled%20Diagram.jpg" width="400" height="400">
 
 ## Collaborators
 Developed by Nimrod Gabbay and Maor Malekan.</br>
