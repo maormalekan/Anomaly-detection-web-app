@@ -14,7 +14,7 @@ app.use(express.static('view'));
 
 
 //starting server on port 8080
-app.listen(8080, () => console.log("Web app listening at 8080"));
+app.listen(8080);
 
 
 app.get('/', function (req, res) {
