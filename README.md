@@ -11,7 +11,7 @@ The app listens on local host, port 8080 so type : "http://localhost:8080/" (htt
 Then, choose a detection algorithm that you want to detect with, and upload 2 csv files as explained above (examples of these csv files appear in the project folder).</br>
 When you click on "detect!" (http POST command) the app will calculate the correlated features and in cases of anomaly detection between them, the time ranges of the anomalies will be saved also.</br>
 All the details of correlated features and anomalies between them will be sent back to the controller (server in our case) as JSON.</br>
-The server creates a Json file called 'result.json' that will keep the data that got back from the model. After that the server will turn to the client side of the app (result.html page) that will transform the data from json to html table that will get back to the user as a response.</br>
+The server creates a Json file called 'result.json' that will keep the data that got back from the model. After that the server will turn to the client side of the app (result.html page) that will transform the data from json to html table. That table will be back to the user as a response.</br>
 Example:
 <img width="946" alt="‏‏לכידה1" src="https://user-images.githubusercontent.com/54501031/119794204-fefe5f80-bedf-11eb-9946-b2de5510b7a6.PNG"></br>
 
