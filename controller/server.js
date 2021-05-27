@@ -3,6 +3,9 @@ const fileUpload = require('express-fileupload');
 const app = express();
 const bp = require('body-parser');
 const model = require('../model/model')
+const fs = require('fs');
+const path = require("path");
+
 
 app.use(bp.json());
 app.use(bp.urlencoded({extended: true}));
@@ -15,7 +18,7 @@ app.listen(8080, () => console.log("Web app listening at 8080"));
 
 
 app.get('/', function (req, res) {
-    res.sendFile('index.html')
+    res.sendFile('index.html');
 })
 
 app.post('/detect', function (req, res) {
@@ -32,8 +35,9 @@ app.post('/detect', function (req, res) {
             let detect_dict = model.createDict(detect_file.data.toString());
             model.learn(proper_dict, model_type);
             let result = model.detect(detect_dict, model_type);
-            res.write(JSON.stringify(result, null, 4));
-            res.status(200).end();
+            const json = JSON.stringify(result, null, 4);
+            fs.writeFileSync('view/result.json', json);
+            res.sendFile(path.join(process.cwd(),'/view/result.html'));
         }
     } else if (req.body.detection_algorithms != null)
         res.send('<h1> Upload proper and detect files!</h1>').status(404).end();
@@ -41,7 +45,6 @@ app.post('/detect', function (req, res) {
         res.send('<h1> Choose an algorithm!</h1>').status(404).end();
     else
         res.send('<h1> Choose an algorithm and upload files!</h1>').status(404).end();
-
 
 })
 

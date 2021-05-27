@@ -114,13 +114,10 @@ function detect(dict, model_type) {
             } else
                 j++;
         }
-        let pair_of_features ={
-            feature1: correlatedFeatures[i].feature1,
-            feature2: correlatedFeatures[i].feature2
-        } ;
         let toPush = {
-            pair_of_features: pair_of_features,
-            anoamly_at: spanColumn.length > 0 ? spanColumn : {},
+            feature: correlatedFeatures[i].feature1,
+            correlated_with: correlatedFeatures[i].feature2,
+            anoamly_at: spanColumn.length > 0 ? spanColumn : '-',
             algorithm_type: model_type.detection_algorithms
         };
         anomalies.push(toPush);
