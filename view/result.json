@@ -1,45 +1,27 @@
 [
     {
-        "feature": "aileron",
-        "correlated_with": "slip-skid-ball_indicated-slip-skid",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "elevator",
-        "correlated_with": "latitude-deg",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
         "feature": "throttle",
         "correlated_with": "engine_rpm",
         "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "longitude-deg",
-        "correlated_with": "attitude-indicator_indicated-pitch-deg",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
+        "algorithm_type": "regression"
     },
     {
         "feature": "roll-deg",
         "correlated_with": "attitude-indicator_internal-roll-deg",
         "anoamly_at": "-",
-        "algorithm_type": "hybrid"
+        "algorithm_type": "regression"
     },
     {
         "feature": "pitch-deg",
         "correlated_with": "attitude-indicator_internal-pitch-deg",
         "anoamly_at": "-",
-        "algorithm_type": "hybrid"
+        "algorithm_type": "regression"
     },
     {
         "feature": "heading-deg",
         "correlated_with": "indicated-heading-deg",
         "anoamly_at": "-",
-        "algorithm_type": "hybrid"
+        "algorithm_type": "regression"
     },
     {
         "feature": "airspeed-kt",
@@ -50,19 +32,13 @@
                 701
             ]
         ],
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "glideslope",
-        "correlated_with": "vertical-speed-fps",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
+        "algorithm_type": "regression"
     },
     {
         "feature": "vertical-speed-fps",
         "correlated_with": "gps_indicated-vertical-speed",
         "anoamly_at": "-",
-        "algorithm_type": "hybrid"
+        "algorithm_type": "regression"
     },
     {
         "feature": "airspeed-indicator_indicated-speed-kt",
@@ -73,90 +49,30 @@
                 701
             ]
         ],
-        "algorithm_type": "hybrid"
+        "algorithm_type": "regression"
     },
     {
         "feature": "altimeter_indicated-altitude-ft",
         "correlated_with": "altimeter_pressure-alt-ft",
         "anoamly_at": "-",
-        "algorithm_type": "hybrid"
+        "algorithm_type": "regression"
     },
     {
         "feature": "altimeter_pressure-alt-ft",
         "correlated_with": "encoder_pressure-alt-ft",
         "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "attitude-indicator_indicated-pitch-deg",
-        "correlated_with": "attitude-indicator_internal-pitch-deg",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "attitude-indicator_indicated-roll-deg",
-        "correlated_with": "attitude-indicator_internal-roll-deg",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "attitude-indicator_internal-pitch-deg",
-        "correlated_with": "gps_indicated-vertical-speed",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "attitude-indicator_internal-roll-deg",
-        "correlated_with": "turn-indicator_indicated-turn-rate",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
+        "algorithm_type": "regression"
     },
     {
         "feature": "encoder_indicated-altitude-ft",
         "correlated_with": "encoder_pressure-alt-ft",
         "anoamly_at": "-",
-        "algorithm_type": "hybrid"
+        "algorithm_type": "regression"
     },
     {
         "feature": "encoder_pressure-alt-ft",
         "correlated_with": "gps_indicated-altitude-ft",
         "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "gps_indicated-altitude-ft",
-        "correlated_with": "gps_indicated-ground-speed-kt",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "gps_indicated-ground-speed-kt",
-        "correlated_with": "slip-skid-ball_indicated-slip-skid",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "gps_indicated-vertical-speed",
-        "correlated_with": "vertical-speed-indicator_indicated-speed-fpm",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "indicated-heading-deg",
-        "correlated_with": "engine_rpm",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "magnetic-compass_indicated-heading-deg",
-        "correlated_with": "turn-indicator_indicated-turn-rate",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
-    },
-    {
-        "feature": "vertical-speed-indicator_indicated-speed-fpm",
-        "correlated_with": "engine_rpm",
-        "anoamly_at": "-",
-        "algorithm_type": "hybrid"
+        "algorithm_type": "regression"
     }
 ]
