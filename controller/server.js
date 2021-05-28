@@ -14,12 +14,12 @@ app.use(express.static('view'));
 
 
 //starting server on port 8080
-app.listen(8080, () => console.log("Web app listening at 8080"));
-
+app.listen(8080);
 
 app.get('/', function (req, res) {
     res.sendFile('index.html');
 })
+
 
 app.post('/detect', function (req, res) {
     if (req.files && req.body.detection_algorithms != null) {
