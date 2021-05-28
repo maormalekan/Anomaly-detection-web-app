@@ -26,3 +26,4 @@ The model is responsble to calculate the anomalies , the controller is responsib
 Developed by Nimrod Gabbay and Maor Malekan.</br>
 
 ## Explanation video
+https://www.youtube.com/watch?v=_VSbQZFuh9E
