@@ -16,7 +16,8 @@ Example:
 <img width="946" alt="‏‏לכידה1" src="https://user-images.githubusercontent.com/54501031/119794204-fefe5f80-bedf-11eb-9946-b2de5510b7a6.PNG"></br>
 
 ## Implementation
-This app was built with node.js and based on MVC software architectural pattern that has three main parts that run it, each part with its own designated responsibilities.</br>
+This app was built with node.js and based on MVC software architectural pattern that has three main parts that run it, each part with its own designated responsibilities. 
+We also used jQuery library as part of developing our app.</br>
 The model is responsble to calculate the anomalies , the controller is responsible to connect the http requests from the client to the calculation of the model behind the scenes and the view is responsible to display the web pages to the client (with html pages). </br>
 ### [UML](https://github.com/nimrod97/Anomaly-detection-web-app/blob/main/Untitled%20Diagram.png)
 <img src="https://github.com/nimrod97/Anomaly-detection-web-app/blob/main/Untitled%20Diagram.png" width="550" height="300">
